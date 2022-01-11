@@ -9,7 +9,7 @@
     <Grid>
         <StackPanel Margin="10">
             <Button Content="Create Contact" Click="CreateButton_Click" />
-            <TextBox x:Name="filterTextBox" Margin="0 5" TextChanged="TextBox_TextChanged" />
+            <TextBox x:Name="filterTextBox" Margin="0 5" TextChanged="filterTextBox_TextChanged" />
             <ListView Height="280" x:Name="contactsListView" SelectionChanged="contactsListView_SelectionChanged">
                 <ListView.ItemTemplate>
                     <DataTemplate>

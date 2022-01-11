@@ -39,7 +39,7 @@ namespace ContactsApp
             contactsListView.ItemsSource = Contacts;
         }
 
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        private void filterTextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
             var textBoxText = (sender as TextBox)?.Text;
             var filteredContacts = Contacts
