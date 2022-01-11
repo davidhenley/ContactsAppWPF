@@ -13,6 +13,7 @@ namespace ContactsApp
         public NewContactWindow()
         {
             InitializeComponent();
+            Owner = Application.Current.MainWindow;
         }
 
         private void SaveButton_Click(object sender, RoutedEventArgs e)

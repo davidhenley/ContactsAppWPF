@@ -24,7 +24,7 @@ namespace ContactsApp
 
         private void CreateButton_Click(object sender, RoutedEventArgs e)
         {
-            var newContactWindow = new NewContactWindow { Owner = this };
+            var newContactWindow = new NewContactWindow();
             newContactWindow.ShowDialog();
 
             ReadDatabase();
@@ -53,7 +53,7 @@ namespace ContactsApp
         {
             if (contactsListView.SelectedItem is null) return;
 
-            var detailContactWindow = new DetailsContactWindow((Contact)contactsListView.SelectedItem) { Owner = this };
+            var detailContactWindow = new DetailsContactWindow((Contact)contactsListView.SelectedItem);
             detailContactWindow.ShowDialog();
 
             ReadDatabase();

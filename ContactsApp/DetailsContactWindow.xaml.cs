@@ -15,6 +15,8 @@ namespace ContactsApp
         {
             InitializeComponent();
 
+            Owner = Application.Current.MainWindow;
+
             Contact = contact;
 
             nameTextBox.Text = contact.Name;
